@@ -1,0 +1,94 @@
+<html>
+	<head>
+	
+	<title> Calorie Calculator!</title>
+	<link type="text/css" href="task1.css" rel="stylesheet">
+	<script type="text/javascript" src="task1.js"></script>
+	</head>
+	
+	<body onload="Function1()">
+	<h1 class="title">CALCULATE CALORIES PER DAY</h1><br/>
+	
+		<form name="Calorie1">
+		
+		
+		
+		
+		<div class="left">
+		<br/>
+		<div id="form">
+		<h3 id="h4"> Input details</h3>
+		
+		<p>Gender
+		<input type="radio"   name="gender"  class="gen" value="male"/> Male
+		<input type="radio"   name="gender" class="gen" value="female"/> Female
+		</p>
+		
+		<p>Age in years 
+		<input type="text" id="age" maxlength="2"/>
+		</p>
+		
+		<p>Height in cm
+		<input type="text" id="height" maxlength="3"/>
+		</p>
+		
+		<p>Weight in kg
+		<input type="text" id="weight" maxlength="4"/>
+		</p>
+		
+		<p>Exercise/day
+		<select id="exercise">
+		<option value="1">Sedentary</option>
+		<option value="2">Lightly active</option>
+		<option value="3">Moderate active</option>
+		<option value="4">Very active</option>
+		<option value="5">Extra active</option>
+		</select>
+		</p>
+		
+		<p>
+		<button type="submit" form="Calorie1" id ="btn1"value="Submit" onClick="Calculate()">Calculate Calories</button>
+		</p>
+		<br/><br/>
+		
+		<div id="cal1">
+		<p >Calories/day
+		<Input type ="text" id="calories" maxlength="10"/>
+		</p>
+		</div>
+	
+		
+		</form>
+		
+		
+		</div>
+		</div>
+ 
+<div class="right">
+<div id="Food"> 
+ <h3 id="h3">Food item </h3>
+  <input type="text" id="foodname" placeholder="name of food Item">
+  <input type="text" id="amount" placeholder="number of servings">
+  <input type="text" id="calorie count" placeholder="calorie count">
+  <button onClick="add()">Add</button>
+</div>
+
+<div id="list1">
+<ul id="Ul">
+<h2>list of food items</h2>
+</ul><br/>
+<button onClick="Eat()">That's about It</button> <br/><br/>
+Total
+<Input type="text" id="totalf">
+</div>
+
+</div>
+	
+
+		
+		
+		
+		
+		
+	</body>
+</html>
