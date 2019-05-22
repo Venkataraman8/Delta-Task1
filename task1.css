@@ -1,6 +1,17 @@
+img
+{
+	position:absolute;
+	left:180px;
+}
+
+body {
+	background-color:#B5FE7D;
+}
+
 #exercise
 {
 	color:blue;
+	
 	
 }
 
@@ -9,26 +20,35 @@
 }
 
 h1 {
+	font-size: 40px;
+	font-family: "Trebuchet MS","Arial";
   text-align: center;
   text-transform: uppercase;
-  color: green;
+  color: 533D09;
 } 
 
 h2 {
+	text-shadow: 6px 4px black;
   text-align: center;
   text-transform: uppercase;
   color: yellow;
 } 
 
 #h3 {
+	text-shadow: 3px 4px black;
   text-align: center;
   text-transform: uppercase;
   color: yellow;
 } 
 
+#h4{
+	text-align:center;
+	
+	font-family: "Verdana";
+}
 
 
-.left
+#left
 {
 	background-color:blue;
 	color:white;
@@ -38,7 +58,7 @@ float:left;
 
 }
 
-.right
+#right
 {
 	background-color:brown;
 	color:white;
@@ -48,7 +68,7 @@ float:left;
 	}
 	
 @media only screen and (max-width: 768px){
-	.left
+	#left
 {
 width:100%;
 float:left;
@@ -56,7 +76,7 @@ padding:1px;
 
 }
 
-.right
+#right
 {
 	width:100%;
 	float:right;
@@ -65,5 +85,106 @@ padding:1px;
 
 #btn1{
 	float:right;
+  background-color: #01FEF6; 
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
+#btn1:hover{
+	 background-color: #000009;
+	 color: #01FEF6;
+}
+
+#add1{
+	position:absolute;
+	right: 550px;
+  background-color: #FEC301; 
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#add1:hover{
+	 background-color: black;
+	 color: #FEC301;
+}
+
+p
+{
+	
+	border-style:dotted;
+}
+
+ol li {
+	
+  cursor: pointer;
+  position: relative;
+  padding: 12px 2px 12px 10px;
+  background: #F6F4ED;
+  font-size: 20px;
+  transition: 0.2s;
+  color:black;
+
+
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ol li:nth-child(odd) {
+  background: #97958D;
+}
+
+/* Darker background-color on hover */
+ol li:hover {
+  background: #4F4D4A;
+}
+#net{
+	position:absolute;
+	right: 200px;
+  background-color: #FEC301; 
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#net:hover{
+	 background-color: black;
+	 color: #FEC301;
+}
+#clear{
+	position:absolute;
+	right: 400px;
+  background-color: #FEC301; 
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#clear:hover{
+	 background-color: black;
+	 color: #FEC301;
+}
+
+#Food
+{
+	border-style:dashed;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: #01FE09;
+  }
+}
 

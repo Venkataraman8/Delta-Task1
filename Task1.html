@@ -1,7 +1,8 @@
 <html>
 	<head>
-	
+	<img src="https://cdn1.iconfinder.com/data/icons/healthy-lifestyle-dieting/256/Calorie_Calculator-512.png" height="120px" width="200px" align="left">
 	<title> Calorie Calculator!</title>
+	</br>
 	<link type="text/css" href="task1.css" rel="stylesheet">
 	<script type="text/javascript" src="task1.js"></script>
 	</head>
@@ -14,29 +15,30 @@
 		
 		
 		
-		<div class="left">
+		<div id="left">
 		<br/>
+		<p >
 		<div id="form">
 		<h3 id="h4"> Input details</h3>
 		
-		<p>Gender
+		<br>Gender
 		<input type="radio"   name="gender"  class="gen" value="male"/> Male
 		<input type="radio"   name="gender" class="gen" value="female"/> Female
-		</p>
+		</br>
 		
-		<p>Age in years 
+		<br>Age in years 
 		<input type="text" id="age" maxlength="2"/>
-		</p>
+		</br>
 		
-		<p>Height in cm
+		<br>Height in cm
 		<input type="text" id="height" maxlength="3"/>
-		</p>
+		</br>
 		
-		<p>Weight in kg
+		<br>Weight in kg
 		<input type="text" id="weight" maxlength="4"/>
-		</p>
+		</br>
 		
-		<p>Exercise/day
+		<br>Exercise/day
 		<select id="exercise">
 		<option value="1">Sedentary</option>
 		<option value="2">Lightly active</option>
@@ -44,17 +46,19 @@
 		<option value="4">Very active</option>
 		<option value="5">Extra active</option>
 		</select>
-		</p>
+		</br>
 		
-		<p>
-		<button type="submit" form="Calorie1" id ="btn1"value="Submit" onClick="Calculate()">Calculate Calories</button>
 		</p>
+		</br>
+		<br>
+		<button type="submit" form="Calorie1" id ="btn1"value="Submit" onClick="Calculate()">Calculate Calories</button>
+		</br>
 		<br/><br/>
 		
 		<div id="cal1">
-		<p >Calories/day
+		<br >Calories/day
 		<Input type ="text" id="calories" maxlength="10"/>
-		</p>
+		</br>
 		</div>
 	
 		
@@ -64,25 +68,35 @@
 		</div>
 		</div>
  
-<div class="right">
+<div id="right">
 <div id="Food"> 
  <h3 id="h3">Food item </h3>
   <input type="text" id="foodname" placeholder="name of food Item">
   <input type="text" id="amount" placeholder="number of servings">
   <input type="text" id="calorie count" placeholder="calorie count">
-  <button onClick="add()">Add</button>
+  <br>
+  </br>
+  <button onClick="add()" id="add1">Add</button>
+  </br></br>
+  Note:Do not leave any column blank
 </div>
 
-<div id="list1">
-<ul id="Ul">
+
 <h2>list of food items</h2>
-</ul><br/>
-<button onClick="Eat()">That's about It</button> <br/><br/>
+
+
+<ol id="myList1"></ol>
+<br/>
+<button onClick="Eat()" id="Net">That's about It</button>
+<button onClick="Clear()" id="Clear">Clear </button> <br/><br/><br/><br/>
 Total
 <Input type="text" id="totalf">
-</div>
+
+
+
 
 </div>
+
 	
 
 		
