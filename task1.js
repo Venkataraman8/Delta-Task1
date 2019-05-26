@@ -124,7 +124,7 @@ var food=[],i=0,total=0,cal,t=[],f=0,k=0;
 					
 					  var li = document.createElement("li");
 				
-						var t = document.createTextNode(Input1);
+						var t = document.createTextNode(Input1+" : "+Input2+" servings each with "+Input3+" calories.");
 						li.appendChild(t);
 						
 							document.getElementById("myList1").appendChild(li);

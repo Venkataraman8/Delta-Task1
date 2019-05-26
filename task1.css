@@ -1,7 +1,7 @@
 img
 {
 	position:absolute;
-	left:180px;
+	left:230px;
 }
 
 body {
@@ -50,6 +50,8 @@ h2 {
 
 #left
 {
+	position :relative;
+	top:15px;
 	background-color:blue;
 	color:white;
 	height:600px;
@@ -59,7 +61,7 @@ float:left;
 }
 
 #right
-{
+{	
 	background-color:brown;
 	color:white;
 	height:600px;
@@ -116,7 +118,7 @@ padding:1px;
 	 color: #FEC301;
 }
 
-p
+#form
 {
 	
 	border-style:dotted;
