@@ -109,34 +109,38 @@ var food=[],i=0,total=0,cal,t=[],f=0,k=0;
 					
 					var Input1=document.getElementById("foodname").value;
 					var Input2=document.getElementById("amount").value;
-					var Input3=document.getElementById("calorie count").value;
+					var Input3=document.getElementById("carbohydrates").value;
+					var Input4=document.getElementById("fat").value;
+					var Input5=document.getElementById("proteins").value;
 					
 					if(Input1=="") {alert("name of food item undefined"); f=-1;}
 					if(Input2=="") {alert("number of servings undefined"); f=-1;}
-					if(Input3=="") {alert("calorie count undefined"); f=-1;}
+					if(Input3=="") {alert("carbohydrates udefined"); f=-1;}
+					if(Input4=="") {alert("fat udefined"); f=-1;}
+					if(Input5=="") {alert("proteins udefined"); f=-1;}
 					
 					
-					
-					
+					var cals=4*Input3 + 4*Input5 + 9*Input4 ;
 					
 					
 					
 					
 					  var li = document.createElement("li");
 				
-						var t = document.createTextNode(Input1+" : "+Input2+" servings each with "+Input3+" calories.");
+						var t = document.createTextNode(Input1+" : "+Input2+" servings each with "+cals+" calories.");
 						li.appendChild(t);
 						
 							document.getElementById("myList1").appendChild(li);
 							
-					food[i]=Input2*Input3;
+					food[i]=Input2*cals;
 					i++;
-					total=total+Input2*Input3;
+					total=total+Input2*cals;
 					alert(total);
 					document.getElementById("foodname").value="";
 					document.getElementById("amount").value="";
-					document.getElementById("calorie count").value="";
-					
+					document.getElementById("carbohydrates").value="";
+					document.getElementById("fat").value="";
+					document.getElementById("proteins").value="";
 					
 					
 					

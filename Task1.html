@@ -57,7 +57,7 @@
 		
 		<div id="cal1">
 		<br >Calories/day
-		<Input type ="text" id="calories" maxlength="10"/>
+		<Input type ="text" id="calories" maxlength="10" readonly />
 		</br>
 		</div>
 	
@@ -72,8 +72,10 @@
 <div id="Food"> 
  <h3 id="h3">Food item </h3>
   <input type="text" id="foodname" placeholder="name of food Item">
-  <input type="text" id="amount" placeholder="number of servings">
-  <input type="text" id="calorie count" placeholder="calorie count">
+  <input type="text" size="15" id="amount" placeholder="servings">
+  <input type="text" size="15" id="carbohydrates" placeholder="carbs (g)">
+  <input type="text" size="15" id="fat" placeholder="fat (g)">
+  <input type="text" size="15" id="proteins" placeholder="proteins (g)">
   <br>
   </br>
   <button onClick="add()" id="add1">Add</button>
@@ -90,7 +92,7 @@
 <button onClick="Eat()" id="Net">That's about It</button>
 <button onClick="Clear()" id="Clear">Clear </button> <br/><br/><br/><br/>
 Total
-<Input type="text" id="totalf">
+<Input type="text" id="totalf" readonly>
 
 
 
